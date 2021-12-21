@@ -1,143 +1,219 @@
-.nav-item{
-background-color:#202124;
-color: skyblue;
+
+.body{
+font-family: 'Roboto', sans-serif;
 }
 
-.nav-link{
-color: lightblue;
-}
-
-.nav-link:hover{
-color: lavender;
-}
-
-#myTab{
-background-color: #202124;
-}
-
-#myTabContent{
-background-color: #202124;
-}
-
-.jumbotron{
-background-color: lightblue;
-color: #202124;
-height: 400px;
-}
-
-h1{
-text-align: center;
-margin-top: 90px;
-font-weight:600;
-font-family: 'Rampart One', cursive;
-}
-
-h2{
-text-align: center;
-padding: 20px;
-color: skyblue;
-}
-
-h3{
-margin: 30px;
-}
-
-h5{
-text-align: center;
-}
-
-.overview-panel{
-justify-content: center;
-background-color:#202124;
+.nav li{
+display: inline-block;
+font-size: 18px;
+padding:20px 40px;
 color: white;
-padding: 40px;
 }
 
-.process-overview-cards{
+.li:hover {
+background-color:skyblue;
+color: white;
+}
+
+.ul{
+width: 40%;
+margin-left: auto;
+background-color: black;
+}
+
+.h1 {
+font-family: 'Roboto', sans-serif;
+}
+
+.p {
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+}
+
+.logo{
+height: 90px;
+width: 90px;
+background:white;
+background-image: url("../portfolio/images/logo.png");
+background-position: center;
+}
+
+.header{
+width: 100%;
+padding: 0%;
+color: white;
+background-color:#222222;
+}
+
+.hero{
+max-width:100%;
+height: 400px;
+background-image: url("../portfolio/images/skyblue-hero.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.buttonBox{
+padding: 50px;
+}
+
+.heroButton{
+background-color: skyblue;
+border: 0px;
+border-radius: 20px;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+}
+
+.heroButton:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.herocontent{
+width: 100%;
+margin: 0 auto;
+padding: 50px;
+text-align: left;
+color: black;
+}
+
+.intro{
 display: flex;
 flex-direction: row;
-justify-content: center;
-background-color:#202124;
+background-color: skyblue;
 }
 
-.card{
-background-color:#202124;
-color:white;
+.photoContainer{
+max-width: 100%;
+background-repeat: no-repeat;
+background-position: center;
 }
 
-.overview-icon{
-display: flex;
-justify-content: center;
-color: white;
-}
-
-.icons{
-display: flex;
-justify-content: center;
-}
-
-.icon{
+.introContainer{
+max-width: 100%;
+margin: 0 auto;
 padding: 30px;
+font-size: 20px;
+text-align: left;
 }
 
-#research-data-visualization{
-color:#202124;
+
+.flexContainer{
+display: flex;
+flex-direction: row;
+background-image: url("../portfolio/images/skyblue-hero.png");
+background-repeat: no-repeat;
+color: black;
 }
 
-#problem-statement-jumbotron{
-background-color:#202124;
+.skill{
+width: 100%;
+margin: 0 auto;
+padding: 15px;
 }
 
-#problem-statement-copy{
+
+.myWork{
+width: 100%;
+}
+
+.workGrid{
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 
+"CaseStudy1 GovernmentWebsiteRedesign"
+"NonProfitWebsiteRedesign CaseStudy2"
+"CaseStudy3 FinalProject";
+}
+
+@media only screen and (max-width: 600){
+flex-direction: column;
+width: 100%;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr;
+grid-template-areas:
+"CaseStudy1"
+"GovernmentWebsiteRedesign"
+"NonProfitWebsiteRedesign"
+"CaseStudy2"
+"CaseStudy3"
+"FinalProject";
+}
+
+
+.flex-container{
+display: flex;
+flex-direction: row;
+}
+
+.myWork{
+height: 950px;
+}
+
+.recifit{
+width: 100%;
+margin: 0 auto;
+padding: 15px;
+background-position: center;
+}
+
+.npo{
+width: 100%;
+margin: 0 auto;
+padding: 15px;
+}
+
+.finalProject{
+width: 100%;
+margin: 0 auto;
+padding: 15px;
+}
+
+.lowerButton{
+background-color: #222222;
+color: white;
+font-style: bold;
+border: 2px solid skyblue;
+border-radius: 20px;
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.lowerButton:hover {
+background-color:skyblue;
 color: white;
 }
 
-#blue-card{
-background-color: lightblue;
-}
 
-.mid-fi-img{
-display: flex;
-justify-content: center;
-}
-
-#mid-fi-title{
-background-color: lightblue;
-color: #202124;
-}
-
-#mid-fi-container{
-color: #202124;
-justify-content: center;
-}
-
-#high-fi-prototype-title{
-background-color:#202124;
-}
-
-#high-fi-container{
-color: #202124;
-justify-content: center;
-}
-
-.high-fi-img{
-display: flex;
-justify-content: center;
-}
-
-.media{
-background-color:#202124;
+.footerButton{
+background-color: skyblue;
+border: 0px;
+border-radius: 20px;
 color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+position: relative;
+top: 70%;
+left: 83%;
+transform: translate(-50%, -220%);
+-ms-transform: translate(-50%, -50%);
+background-color:skyblue;
+cursor: pointer;
 }
 
-.usability-testing-copy{
-margin: 50px;
-}
-
-.ml-3{
-padding: 30px;
-}
-
-#solution-title{
-background-color:#202124;
+.footerButton:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
