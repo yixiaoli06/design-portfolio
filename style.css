@@ -10,6 +10,15 @@ padding:20px 40px;
 color: white;
 }
 
+a {
+color: white;
+text-decoration: none;
+}
+
+a:hover{
+color:black;
+}
+
 .li:hover {
 background-color:skyblue;
 color: white;
@@ -18,7 +27,7 @@ color: white;
 .ul{
 width: 40%;
 margin-left: auto;
-background-color: black;
+background-color:orange;
 }
 
 .h1 {
